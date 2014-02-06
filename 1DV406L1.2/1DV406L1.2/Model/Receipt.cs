@@ -39,15 +39,15 @@ namespace _1DV406L1._2.Model
                 DiscountRate = 0;
             }
 
-            if (500 <= subtotal && subtotal < 1000)
+            else if(subtotal < 1000)
             {
                 DiscountRate = 0.05;
             }
-            if (1000 <= subtotal && subtotal < 5000)
+            else if(subtotal < 5000)
             {
                 DiscountRate = 0.10;
             }
-            if (5000 <= subtotal)
+            else
             {
                 DiscountRate = 0.15;
             }

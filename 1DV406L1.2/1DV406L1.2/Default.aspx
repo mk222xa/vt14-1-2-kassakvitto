@@ -13,7 +13,7 @@
         <asp:TextBox ID="UserInputTextBox" runat="server" TextMode="SingleLine"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Fältet måste fyllas i" ControlToValidate="UserInputTextBox">            
         </asp:RequiredFieldValidator>
-        <asp:CompareValidator ID="CompareValidator1" runat="server" ErrorMessage="Summan måste vara större än 0" ControlToValidate="UserInputTextBox" Operator="GreaterThanEqual" ValueToCompare="0" Type="Double"></asp:CompareValidator>
+        <asp:CompareValidator ID="CompareValidator1" runat="server" ErrorMessage="Summan måste vara större än 0" ControlToValidate="UserInputTextBox" Operator="GreaterThan" ValueToCompare="0" Type="Double"></asp:CompareValidator>
         
         <asp:Button ID="SendButton" runat="server" Text="Beräkna rabatt" OnClick="SendButton_Click" />
 
